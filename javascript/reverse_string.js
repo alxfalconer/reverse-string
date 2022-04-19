@@ -1,5 +1,18 @@
 function reverseString(str) {
   // type your code here
+  if (str === "") {
+    return str
+  }
+  // separate into arr
+  const newArr = []
+  // push each to new array
+  for (const elem of str) {
+    newArr.unshift(elem)
+  }
+  // array to string
+  result = newArr.join("")
+  return result
+
 }
 
 if (require.main === module) {
